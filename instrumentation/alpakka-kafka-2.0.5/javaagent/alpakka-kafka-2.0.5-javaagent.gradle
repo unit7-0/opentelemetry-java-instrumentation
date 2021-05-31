@@ -1,0 +1,15 @@
+apply from: "$rootDir/gradle/instrumentation.gradle"
+
+muzzle {
+  pass {
+    group = "com.typesafe.akka"
+    module = "akka-stream-kafka"
+    versions = "[2.0.5,)"
+  }
+}
+
+dependencies {
+  library "com.typesafe.akka:akka-stream-kafka_2.12:2.0.5"
+
+
+}
